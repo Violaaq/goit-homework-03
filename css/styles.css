@@ -11,7 +11,6 @@
 .container {
   width: 1158px;
   display: flex;
-  align-items:center;
 }
 
 body {
@@ -19,6 +18,12 @@ body {
   color: var(--color-contact);
   background-color: #ffffff;
 }
+.header {
+  width: 1440px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
 .header-contents {
   list-style: none;
 }
@@ -41,6 +46,11 @@ body {
   color: var(--color-header);
   text-decoration: none;
 }
+.navigation {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
 
 .nav-link {
   color: var(--color-header);
@@ -57,6 +67,10 @@ body {
 }
 .address {
   font-style: normal;
+}
+
+.address-list {
+  gap: 40px;
 }
 
 .contact-style {
@@ -76,6 +90,11 @@ body {
 }
 .first-section {
   background-color: var(--color-header);
+  width: 1440px;
+  height: 600px;
+}
+
+.second-section {
 }
 
 .section-tittle {
