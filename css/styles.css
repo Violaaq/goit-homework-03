@@ -8,6 +8,12 @@
   --color-footer: #f4f4fd;
 }
 
+.container {
+  width: 1158px;
+  display: flex;
+  align-items:center;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-contact);
