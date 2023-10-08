@@ -298,6 +298,9 @@ body {
   gap: 24px;
   margin-bottom: 72px;
 }
+.list-item {
+  width: calc((100% - 48px) / 3);
+}
 
 .list-button {
   background-color: var(--color-footer);
