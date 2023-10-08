@@ -329,7 +329,7 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
-.section-list-item {
+.second-list-item {
   width: calc((100% - 48px) / 3);
 }
 
