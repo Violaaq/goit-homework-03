@@ -109,8 +109,7 @@ body {
   height: 600px;
   display: flex;
   justify-content: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 
 .second-section {padding-top: 120px;
@@ -139,13 +138,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   word-wrap: break-word;
-  cursor: pointer; 
-  border:none
+  cursor: pointer;
+  border:none;
   display: block;
   padding: 16px 32px;
   border-radius:4px;
+  min-width: 169px;
+  height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  mrgin: bottom 188px;
+  margin: bottom 188px;
 }
 
 .button:hover,
@@ -153,7 +154,26 @@ body {
   background-color: var(--color-button-on);
 }
 
-.third-section {display: flex;}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.second-list{display:flex;
+gap: 24px;
+}
+.second-list-item{width: calc((100% - 72px) / 4);}
+.project-tittle{margin-bottom: 8px;}
+
+.third-section {display: flex;
+padding-bottom: 120px;}
 
 .third-section-tittle {
   color: var(--color-header);
@@ -165,9 +185,14 @@ body {
   letter-spacing: 0.02em;
   word-wrap: break-word;
   text-align: center;
+  margin-bottom: 72px;
 }
+.third-section-list{gap: 24px;}
+.third-list-item{width: calc((100% - 48px) / 3);}
+
 .fourth-section {
   background-color: var(--color-footer);
+  padding: 120px 0;
 }
 .fourth-section-tittle {
   font-size: 36px;
@@ -176,6 +201,14 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-header);
+  margin-bottom: 72px;
+}
+.fourth-section-list{display: flex;
+gap: 24px;}
+
+.fourth-list-item{width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-button-active);
 }
 
 .list-button {
@@ -199,6 +232,8 @@ body {
 .list-content {
   background-color: var(--color-button-active);
 }
+.project{ padding: 32px 0px;
+}
 .project-tittle {
   color: var(--color-header);
   font-size: 20px;
@@ -207,6 +242,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   word-wrap: break-word;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .description {
@@ -217,10 +254,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   word-wrap: break-word;
+  text-align: center;
 }
 
 .footer {
-  background-color: var(--color-header);
+  background-color: var(--color-header)
+  padding: 100px 0;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
