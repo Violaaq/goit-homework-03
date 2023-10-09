@@ -20,6 +20,7 @@ img {
 
 .header-div {
   display: flex;
+  align-items: center;
 }
 .container {
   width: 1158px;
@@ -84,7 +85,6 @@ body {
 }
 .address {
   font-style: normal;
-  padding: 24px;
 }
 
 .address-list {
@@ -100,6 +100,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  flex-wrap: nowrap;
 }
 .contact-style:hover,
 .contact-style:focus {
@@ -111,11 +112,13 @@ body {
 .first-section {
   background-color: var(--color-header);
   height: 600px;
-  display: flex;
-  justify-content: center;
   padding: 188px 0;
 }
 
+.sec-one {
+  display: flex;
+  justify-content: center;
+}
 .second-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -132,9 +135,8 @@ body {
   text-align: center;
   max-width: 496px;
   height: 120px;
-  margin-bottom: 48px;
-  padding-left: 472px;
 }
+
 .button {
   background-color: var(--color-button);
   color: var(--color-button-active);
@@ -152,7 +154,7 @@ body {
   min-width: 169px;
   height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-bottom: 188px;
+  margin: 0 auto;
 }
 
 .button:hover,
